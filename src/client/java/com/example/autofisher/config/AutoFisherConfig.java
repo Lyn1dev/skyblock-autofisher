@@ -14,7 +14,7 @@ public class AutoFisherConfig {
     private static final Path CONFIG_FILE = Paths.get("autofisher.properties");
     private static final Path FIREVEIL_MESSAGES_FILE = Paths.get("src/client/resources/fireveil_messages.txt");
 
-    public static boolean enabled = true; // New: Overall mod enable/disable
+    public static boolean enabled = true; // New: Overall mod enable/disable 
     public static boolean enableRecast = true;
     public static boolean debugMode = true; // Default to true for debugging
     public static boolean fireveilEnabled = false; // Default to false
