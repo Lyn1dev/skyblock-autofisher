@@ -1,39 +1,44 @@
 # Skyblock AutoFisher
 
-This is a Fabric mod for Minecraft that automates the process of fishing in Hypixel Skyblock. It automatically reels in fish and recasts the fishing rod, with a special "Fireveil" feature to handle the Fireveil fishing rod.
+This is a fabric mod for minecraft that automates the process of fishing in hypixel skyblock. It automatically reels in fish, and can automatically recast the fishing rod, and has a feature to auto kill the sea creatures spawned.
+
+## FAQ:
+
+**How do I use this?**
+- Download the mod from Releases, drop it in your mods folder on Fabric 1.21.5, go ingame and use `/autofisher on` and cast a fishing rod. The mod will reel in for you. For further usage refer to the Commands section.
+**Why did you make this?**
+- I enjoy coding things and I love automating stuff.
+**How come it's open source?**
+- I don't play skyblock much anymore, and I don't have much free time anymore to work on this and make it anything really good or impressive, I hope my mod would be helpful to whoever HATES fishing, and I hope that people would come together to improve my mod. Please don't steal my code and sell it for pennies in your shitty discord servers, that would not be very cool. 
+**I am illiterate and I think this is a rat. Is this a rat?**
+- Feel free to look through the source code and decide for yourself :)
+**You seem like a cool guy, how can I contact you?**
+- https://discord.gg/GfMvFGJSe2 
 
 ## Features
+  
+-   **Auto Fish:** Fully Undetected, just fishes for you whenever the !!! appears.
+-   **Auto Recast:** Risky, wouldn't recommend using while afk.
+-   **Fireveil Autokill:** A little risky and unfinished. How to use this? Put your fireveil wand in your hotbar slot 2, and it will auto kill mobs that are pulled up based on chat message of the sea creature spawning. CURRENTLY ONLY WORKING FOR BACKWATER BAYOU.
 
--   **Auto Recast:** Automatically recasts the fishing rod after a fish is caught.
--   **Fireveil Support:** Includes a special sequence to handle the Fireveil fishing rod, which is triggered by specific chat messages.
--   **Configurable Delays:** All delays are configurable to better mimic human behavior and avoid detection.
--   **Debug Mode:** A debug mode is available to help with troubleshooting.
+-   **Humanized Delays:** All the delays are fully humanized with multiple layers of randomization and they're configurable to better mimic human behavior and avoid detection.
+-   **Debug Mode:** A debug mode is available which can be used to view the delays between actions. 
 
 ## Commands
 
 -   `/autofisher`: Shows the current status of the mod.
--   `/autofisher on/off`: Enables or disables the entire mod.
+-   `/autofisher on/off`: Enables or disables the autofisher.
 -   `/autofisher recast on/off`: Enables or disables the auto recast feature.
--   `/autofisher fireveil on/off`: Enables or disables the Fireveil support.
+-   `/autofisher fireveil on/off`: Enables or disables the Fireveil feature.
 -   `/autofisher debug on/off`: Enables or disables debug mode.
 
-## Configuration
+## To do list:
 
-The mod can be configured by editing the `autofisher.properties` file in the Minecraft directory. The following properties are available:
+-   I have to add more sea creature spawn messages into the sea creature detection, currently no way to do it yourself unless you clone and edit the code. I hardcoded them for some reason which is honestly kinda stupid looking back but it is what it is, maybe in a future commit I will isolate it into a .csv or a .txt file in which the user would be able to edit what sea creatures they want to auto kill. At the moment I've added like all of the backwater bayou mobs hardcoded. 
+-   Maybe add more kill modes later on instead of just fireveil, but in theory any item that you only need to right click to kill, will work, as long as you put the kill item in your hotbar slot 2.
 
--   `enabled`: `true` or `false`
--   `enableRecast`: `true` or `false`
--   `debugMode`: `true` or `false`
--   `fireveilEnabled`: `true` or `false`
--   `fireveilDelayToSlot2_base`: The base delay before switching to slot 2 (in milliseconds).
--   `fireveilDelayToSlot2_random`: The random component of the delay before switching to slot 2.
--   `fireveilDelayToRightClick_base`: The base delay before right-clicking.
--   `fireveilDelayToRightClick_random`: The random component of the delay before right-clicking.
--   `fireveilDelayToOriginalSlot_base`: The base delay before switching back to the original slot.
--   `fireveilDelayToOriginalSlot_random`: The random component of the delay before switching back to the original slot.
+## Contributing
 
-## Building from Source
-
-1.  Clone the repository.
-2.  Run `gradlew build` in the project directory.
-3.  The compiled `.jar` file will be in the `build/libs` directory.
+1.  Fork the repository.
+2.  Make your changes.
+3.  Submit a pull request for me to review.
