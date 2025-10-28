@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "com.example.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"ExampleClientMixin",
+		"PlayerInventoryMixin",
+		"ChatHudMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
